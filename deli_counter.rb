@@ -21,6 +21,14 @@ end
 def take_a_number(deli, next_person)
   deli << next_person
   puts "Welcome, #{next_person}. You are number #{deli.length} in line."
-  
 end
+
+# Build the now_serving method which should call out (i.e. puts) the next person in line and then remove them from the front. If there is nobody in line, it should call out (puts) that "There is nobody waiting to be served!".
   
+def now_serving()
+  if deli.empty?
+    puts "There is nobody waiting to be served!"
+  
+  else
+    
+end
