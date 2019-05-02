@@ -25,15 +25,12 @@ end
 
 # Build the now_serving method which should call out (i.e. puts) the next person in line and then remove them from the front. If there is nobody in line, it should call out (puts) that "There is nobody waiting to be served!".
   
-def now_serving()
+def now_serving(deli)
   if deli.empty?
     puts "There is nobody waiting to be served!"
   
   else
-    current_line = "The line is currently:"
-    deli.each.with_index (1) do |name, i|
-      current_line << " #{i}. #{name}"
-    end
-    puts current_line
+      puts "Currently serving #{deli.first}."
+      deli.shift
   end
 end
