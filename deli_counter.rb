@@ -20,7 +20,7 @@ end
 
 def take_a_number(deli, next_person)
   deli << next_person
-  puts "Welcome, #{next_person}. You are number #{next_person[i+1]} in line."
+  puts "Welcome, #{next_person}. You are number #{deli.length} in line."
   
 end
   
